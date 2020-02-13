@@ -10,7 +10,7 @@ import attendance
 
 
 def getProfile(id):
-    connect = sqlite3.connect('Facial_Recog/Personal_project/recognizer/Face-Database.db')
+    connect = sqlite3.connect('Face-Database.db')
     cmd = "SELECT * FROM STUDENTS WHERE ID = " + str(id)
     cursor = connect.execute(cmd)
     profile = None
