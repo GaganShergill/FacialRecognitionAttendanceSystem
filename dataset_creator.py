@@ -6,7 +6,7 @@ import openface
 import training_set
 
 def insertorUpdate(id, name, roll):
-    connect = sqlite3.connect('Facial_Recog/Personal_project/recognizer/Face-Database.db')
+    connect = sqlite3.connect('Face-Database.db')
     cmd = "SELECT * FROM STUDENTS WHERE ID = " + id
     cursor = connect.execute(cmd)
     isRecordExist = 0
